@@ -7,10 +7,7 @@ int main()
     scanf("%d",&number);
     while(number)
     {
-        if((number-2*(number/2))==1)
-        {
-            count++;
-        }
+        count=count+(number-2*(number/2));  
         number=number/2;
     }
     printf("%d",count);
