@@ -5,7 +5,7 @@ int main()
 {
     int number,count=0;
     scanf("%d",&number);
-    while(number>0)
+    while(number)
     {
         if((number-2*(number/2))==1)
         {
