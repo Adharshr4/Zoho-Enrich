@@ -3,8 +3,8 @@
 
 int main()
 {
-    float divid;
-    int i,j,r,c,row,colcount,deter=1;
+    float divid,deter=1.0;
+    int i,j,r,c,row,colcount;
     scanf("%d",&r);
     float a[r][r];
     for(i=0;i<r;i++)
@@ -14,12 +14,13 @@ int main()
             scanf("%f",&a[i][j]);
         }
     }
-    for(colcount=0;colcount<c-1;colcount++)
+    
+    for(colcount=0;colcount<r-1;colcount++)
     {
         for(i=colcount+1;i<r;i++)
         {
             divid=a[i][colcount]/a[colcount][colcount];
-            for(j=colcount;j<r;j++)
+            for(j=0;j<r;j++)
             {
                 a[i][j]=a[i][j]-(a[colcount][j]*divid);
             }
@@ -29,5 +30,5 @@ int main()
     {
         deter=deter*a[i][i];
     }
-    printf("%d",deter);
+    printf("%.0f",deter);
 }
