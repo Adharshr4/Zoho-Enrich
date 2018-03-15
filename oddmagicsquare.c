@@ -1,3 +1,14 @@
+/*Write a program to generate a magic square of the given order n. 
+
+Ex: 
+Input: 
+Order : 3 
+
+Output: 
+8 1 6 
+3 5 7 
+4 9 2*/
+
 #include<stdio.h>
 #include <stdlib.h>
 int main()
