@@ -27,7 +27,7 @@ int main()
             i=rowc;
             j=colc;
         }
-        else if(a[i][j]!=0)
+        else
         {
             i++;
             a[i][j]=k++;
