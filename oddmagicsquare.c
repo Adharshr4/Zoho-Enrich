@@ -15,9 +15,9 @@ int main()
 {
     int n,i=0,k=2,p,rowc,colc;
     scanf("%d",&n);
-    if(n%2==0)
+    if(n%2==0||n<0)
     {
-        printf("n is even so terminated");
+        printf("n is even or negative so terminated");
         return 0;
     }
     else
