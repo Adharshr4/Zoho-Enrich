@@ -5,6 +5,11 @@ int main()
 {
     int number,count=0;
     scanf("%d",&number);
+    if(number<0)
+    {
+        printf("Enter a positive number");
+        return 0;
+    }
     while(number)
     {
         count=count+(number-2*(number/2));  
