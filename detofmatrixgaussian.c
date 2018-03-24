@@ -6,6 +6,11 @@ int main()
     float divid,deter=1.0;
     int i,j,r,c,row,colcount;
     scanf("%d",&r);
+    if(r<=0)
+    {
+        printf("Enter a positive number");
+        return 0;
+    }
     float a[r][r];
     for(i=0;i<r;i++)
     {
