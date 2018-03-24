@@ -5,6 +5,11 @@ int main()
 {
     long int num,length,j,nooftimes,arr[100],pos,temp,temp1,c=0;
     scanf("%ld\n%ld",&num,&nooftimes);
+    if(num<0 || nooftimes<0)
+    {
+        printf("Enter a positive number or positive value for rotate count");
+        return 0;
+    }
     temp=num;temp1=num;
     while(temp1>0)
     {
