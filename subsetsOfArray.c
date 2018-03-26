@@ -14,7 +14,7 @@ Output
 
 #include<stdio.h>
 #include <stdlib.h>
-
+int noOfSubset=0;
 int main()
 {
     int n,i,j;
@@ -48,5 +48,6 @@ void print(int dup[],int temparray[],int array[],int initial,int dupcount,int te
     {
         printf("%d ",dup[count]); //at first we are assigining "dup[0]=temparray[-1]" because removevalue is passed as -1... so first element will be zero so printing from index 1 
     }
+    noOfSubset++;  //To count no of subsets and declared as Global variable
     printf("\n");
 }
