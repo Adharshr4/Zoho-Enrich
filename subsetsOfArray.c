@@ -41,14 +41,12 @@ void print(int dup[],int temparray[],int array[],int initial,int dupcount,int te
     for(int p=initial;p<n;p++)
     {
         temparray[tempcount++]=array[p]; 
-        removevalue++; // used to remove the first element from temparray.so first removevalue will be '0' 
-        //and then by using removevalue++ we remove the first element and second element and so on
+        removevalue++; // used to remove the first element from temparray.so first removevalue will be '0'  and then by using removevalue++ we remove the first element and second element and so on
         print(dup,temparray,array,p+1,dupcount,tempcount,n,removevalue); //going from reverse so order is not as required
     }
     for(int count=1;count<dupcount;count++)
     {
-        printf("%d ",dup[count]); //at first we are assigining "dup[0]=temparray[-1]" because removevalue is passed as -1... 
-        //so first element will be zero so printing from index 1 
+        printf("%d ",dup[count]); //at first we are assigining "dup[0]=temparray[-1]" because removevalue is passed as -1... so first element will be zero so printing from index 1 
     }
     printf("\n");
 }
