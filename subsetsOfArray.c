@@ -32,17 +32,17 @@ int main()
     int temp[1000]={0};
     print(duparray,temp,a,0,0,0,n,-1);
 }
-void print(int dup[],int temparray[],int array[],int initial,int dupcount,int tempcount,int n,int removevalue)
+void print(int dup[],int tearray[],int array[],int initial,int dupcount,int tecount,int n,int removevalue)
 {
-    for(int l=removevalue;l<tempcount;l++)
+    for(int l=removevalue;l<tecount;l++)
     {
-        dup[dupcount++]=temparray[l]; //adding the first set 
+        dup[dupcount++]=tearray[l]; //adding the first set 
     }
     for(int p=initial;p<n;p++)
     {
-        temparray[tempcount++]=array[p]; 
+        tearray[tecount++]=array[p]; 
         removevalue++; // used to remove the first element from temparray.so first removevalue will be '0'  and then by using removevalue++ we remove the first element and second element and so on
-        print(dup,temparray,array,p+1,dupcount,tempcount,n,removevalue); //going from reverse so order is not as required
+        print(dup,tearray,array,p+1,dupcount,tecount,n,removevalue); //going from reverse so order is not as required
     }
     for(int count=1;count<dupcount;count++)
     {
