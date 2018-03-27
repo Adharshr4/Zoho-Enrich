@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int main()
 {
-    int n,i,j=0,l,k=0,powervalue,count,start,p=0,signcount=0,nacount=0,s=0,resultarray[100];
+    int n,i,j=0,l,k=0,powervalue,count,start,p=0,signcount=0,nacount=0,s=0,resultarray[100],a[100][100];
     char eqn[100],sign[10],variablecount;
     scanf("%s",eqn);
     for(i=0;i<strlen(eqn);i++)
@@ -18,7 +18,6 @@ int main()
     }
     l=variablecount;
     powervalue=pow(2,l);
-    int a[100][100];
     for(i=0;i<l;i++,k=0,count=0)  //assignigin values for all the variables given
     {
         while(count<pow(2,l))
