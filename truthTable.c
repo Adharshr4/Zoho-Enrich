@@ -39,7 +39,7 @@ int main()
     }
     for(i=0;i<pow(2,l);i++)
     {
-        resultarray[i]=a[i][0]; //assigning first column to a array
+        resultarray[i]=a[i][0]; //assigning first column to an array
     }
     for(int m=0;m<signcount;m++) //computing for all operators...paranthesis is omitted
     {
