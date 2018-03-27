@@ -66,7 +66,7 @@ int main()
             }
         }
     }
-    for(i=0;i<pow(2,l);i++)
+    for(i=0;i<pow(2,l);i++)  //printing the result
     {
         for(j=0;j<l;j++)
         {
