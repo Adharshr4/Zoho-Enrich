@@ -22,16 +22,14 @@ int main()
     {
         while(count<pow(2,l))
         {
-            p=0;
             for(j=0;j<powervalue/2;j++)
             {
                 a[k++][i]=p;
                 count++;
             }
-            p=1;
             for(j=0;j<powervalue/2;j++)
             {
-                a[k++][i]=p;
+                a[k++][i]=!p;
                 count++;
             }
         }
