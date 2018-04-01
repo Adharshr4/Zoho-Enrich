@@ -59,7 +59,6 @@ void subsetString(char s[],int length)
 }
 void print(int included[],int inccoun,int mid,char str[])  //If there are more than one strings of same length
 {
-    int count=-1;
     for(int m=0;m<inccoun;m=m+2)
     {
         if(abs(included[m]-included[m+1])==mid)
