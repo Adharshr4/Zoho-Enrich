@@ -5,7 +5,14 @@ Input:
 abacdefb 
 
 Output: 
-acdef */
+acdef 
+
+Input:
+adharsh
+
+Output:
+ars
+adh*/
 
 #include<stdio.h>
 #include <stdlib.h>
