@@ -59,15 +59,21 @@ void subsetString(char s[],int length)
 }
 void print(int included[],int inccoun,int mid,char str[])  //If there are more than one strings of same length
 {
+    int f=0;
     for(int m=0;m<inccoun;m=m+2)
     {
-        if(abs(included[m]-included[m+1])==mid)
+        if(abs(included[m]-included[m+1])==mid&&str[included[m]]!=str[included[m+1]])
         {
+            f=1;
             for(int start=included[m];start<=included[m+1];start++)
             {
                 printf("%c",str[start]);
             }
+             printf("\n");
         }
-        printf("\n");
+    }
+    if(f==0)
+    {
+        printf("%c",str[0]);
     }
 }
