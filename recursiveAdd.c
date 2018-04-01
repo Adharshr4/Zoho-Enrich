@@ -27,7 +27,7 @@ int main()
         scanf("%d ",&a[i]);
     }
     result=findRecursiveAdd(a,n-1);
-    printf("%d n",result);
+    printf("%d",result);
 }
 void findRecursiveAdd(int arr[],int length)
 {
