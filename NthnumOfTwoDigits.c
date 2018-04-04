@@ -24,7 +24,7 @@ Output:
 
 int main()
 {
-    long int d1,d2,i,j,n,k=0,arr[1000000];
+    long int d1,d2,i,j,n,k=0,arr[1000000];   //Using long only because of the last input and output
     scanf("%ld\n%ld\n%ld",&d1,&d2,&n);
     long int a[30]={0};
     long int count=0,f=0,f1=0,f2=0,num;
