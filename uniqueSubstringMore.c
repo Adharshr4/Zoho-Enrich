@@ -1,5 +1,5 @@
 /* Write a program to find the longest unique substring of a given string. 
-
+This program is based on alphabetical order ( the question u posted previosuly )
 Ex: 
 Input: 
 abacdefb 
