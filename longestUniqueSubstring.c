@@ -5,7 +5,71 @@ Input:
 abacdefb 
 
 Output: 
-acdef */
+bacdef */
+
+#include<stdio.h>
+#include<string.h>
+int main() 
+{
+   char s[100];
+   scanf("%s",s);
+   substring(s);
+   return 0;
+}
+void substring(char a[])
+{
+    int i=0,j=0,start,end,assign=-1,output[100],count=0;
+    while(1)
+    {
+        if(j-i+1>assign)
+        {
+            assign=j-i+1;
+            start=i;
+            end=j;
+        }
+        if(j==strlen(a))
+        {
+            break;
+        }
+        if(duplicate(a,i,j)==1)
+        {
+            j++;
+        }
+        else
+        {
+           i++;
+           j=i;
+        }
+    }
+    for(i=start;i<end;i++)
+    {
+        printf("%c",a[i]);
+    }
+}
+int duplicate(char s[],int k,int k1)
+{
+    int i,j;
+    for(i=k;i<=k1;i++)
+    {
+        for(j=i+1;j<=k1;j++)
+        {
+            if(s[i]==s[j])
+            {
+                return 0;
+            }
+        }
+    }
+    return 1;
+}
+
+/*Write a program to find the longest unique substring of a given string. 
+
+Ex: 
+Input: 
+abacdefb 
+
+Output: 
+acdef 
 
 #include<stdio.h>
 #include <stdlib.h>
@@ -58,4 +122,4 @@ void print(int initial,int final,char str[])  //To build the characters as a str
         result[count++]=str[m];  
     }
     printf("%s",result);
-}
+}   */
